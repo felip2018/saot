@@ -9,666 +9,445 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="resources/css/style_starter.css"></link>
     </h:head>
-    
-        <section class="w3l-bootstrap-header">
-            <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html"><span class="fa fa-cog"></span> Companies</a>
-                    <!-- if logo is image enable this   
-                  <a class="navbar-brand" href="#index.html">
-                      <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-                  </a> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon fa fa-bars"></span>
-                    </button>
+    <div class="container-fluid bg-inverse fixed-top text-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="resources/images/imagenlogoactualizado.png" width="60" height="60" class="d-inline-block align-top" alt="S.A.O.T">  </img> 
+            </a>           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html"><h5>Control center</h5> <span class="sr-only">(current)</span></a>
+                        <!--<a class="nav-link" href="./index.html"><h5>Ordenes de trabajo</h5> <span class="sr-only">(current)</span></a>-->
+                    </li>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="services.html">Services</a>
-                            </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./error404.html"><h5>Logistics</h5> <span class="sr-only">(current)</span></a>
+                        <!--<a class="nav-link" href="./error404.html"><h5>Logistica</h5> <span class="sr-only">(current)</span></a>-->
+                    </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                        <form action="#" class="form-inline position-relative my-2 my-lg-0">
-                            <input class="form-control search" type="search" placeholder="Search here..." aria-label="Search" required=""></input>
-                            <button class="btn btn-search position-absolute" type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
-                        </form>
-                    </div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./error500.html"><h5>Field equipment</h5> <span class="sr-only">(current)</span></a>
+                        <!--<a class="nav-link" href="./error500.html"><h5>Cuadrillas</h5> <span class="sr-only">(current)</span></a>-->
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index3.html"><h5>Profile</h5> <span class="sr-only">(current)</span></a>
+                        <!--<a class="nav-link" href="./index3.html"><h5>Perfil</h5> <span class="sr-only">(current)</span></a>-->
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="https://www.google.com/maps" tabindex="-1" aria-disabled="true"><h5>Agent</h5></a>
+                        <!--<a class="nav-link disabled" href="https://www.google.com/maps" tabindex="-1" aria-disabled="true"><h5>Agente</h5></a>-->
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit"  href="SYSTEM FOR ENERGY.html">Log In</button>-->
+                        <a class="btn btn-outline-secondary my-2 my-sm-0" type="button" href="../Proyecto/login.html">Log in</a></input>
+                </form>
+            </div>
+        </nav>
+    </div>            
+    <section class="w3l-main-slider" id="home">
+        <!-- main-slider -->
+        <div class="companies20-content">
+            <div class="owl-one owl-carousel owl-theme">
+                <div class="item">
+                    <li>
+                        <div class="slider-info banner-view bg bg2" data-selector=".bg.bg2">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg mr-auto">
+                                        <h5> Welcome to saot</h5>
+                                        <p>We are in the era of information management</p>
+                                        <!--<a class="btn btn-secondary btn-theme2 mt-md-5 mt-4" href="services.html"> Our Services</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </div>
-            </nav>
-        </section>
-        <section class="w3l-main-slider" id="home">
-            <!-- main-slider -->
-            <div class="companies20-content">
+                <div class="item">
+                    <li>
+                        <div class="slider-info  banner-view banner-top1 bg bg2" data-selector=".bg.bg2">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg mr-auto">
+                                        <!--<h5>Fast and Reliable Electrical services</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit recusandae eum necessitatibus blanditiis porro cum</p>
+                                        <a class="btn btn-secondary btn-theme2 mt-md-5 mt-4" href="contact.html"> Contact Us</a>--> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="item">
+                    <li>
+                        <div class="slider-info banner-view banner-top2 bg bg2" data-selector=".bg.bg2">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg mr-auto">
+                                        <!--<h5>A company involved in service, maintenance</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit recusandae eum necessitatibus blanditiis porro cum</p>
+                                        <a class="btn btn-secondary btn-theme2 mt-md-5 mt-4" href="about.html"> About Us</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div class="item">
+                    <li>
+                        <div class="slider-info banner-view banner-top3 bg bg2" data-selector=".bg.bg2">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg mr-auto">
+                                        <h5>Saot</h5>
+                                        <p>Installation and maintenance activities of high voltage electrical networks</p>
 
-                <div class="owl-one owl-carousel owl-theme">
-                    <div class="item">
-                        <li>
-                            <div class="slider-info banner-view bg bg2" data-selector=".bg.bg2">
-                                <div class="banner-info">
-                                    <div class="container">
-                                        <div class="banner-info-bg mr-auto">
-                                            <h5> We are industry  Factory solutions</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit recusandae eum necessitatibus blanditiis porro cum</p>
-                                            <a class="btn btn-secondary btn-theme2 mt-md-5 mt-4" href="services.html"> Our Services</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                    </div>
-                    <div class="item">
-                        <li>
-                            <div class="slider-info  banner-view banner-top1 bg bg2" data-selector=".bg.bg2">
-                                <div class="banner-info">
-                                    <div class="container">
-                                        <div class="banner-info-bg mr-auto">
-                                            <h5>Fast and Reliable Electrical services</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit recusandae eum necessitatibus blanditiis porro cum</p>
-                                            <a class="btn btn-secondary btn-theme2 mt-md-5 mt-4" href="contact.html"> Contact Us</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </div>
-                    <div class="item">
-                        <li>
-                            <div class="slider-info banner-view banner-top2 bg bg2" data-selector=".bg.bg2">
-                                <div class="banner-info">
-                                    <div class="container">
-                                        <div class="banner-info-bg mr-auto">
-                                            <h5>A company involved in service, maintenance</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit recusandae eum necessitatibus blanditiis porro cum</p>
-                                            <a class="btn btn-secondary btn-theme2 mt-md-5 mt-4" href="about.html"> About Us</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </div>
-                    <div class="item">
-                        <li>
-                            <div class="slider-info banner-view banner-top3 bg bg2" data-selector=".bg.bg2">
-                                <div class="banner-info">
-                                    <div class="container">
-                                        <div class="banner-info-bg mr-auto">
-                                            <h5>We're thriving and building better products</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit recusandae eum necessitatibus blanditiis porro cum</p>
-                                            <a class="btn btn-secondary btn-theme2 mt-md-5 mt-4" href="services.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </div>
+                        </div>
+                    </li>
                 </div>
             </div>
+        </div>
+    </section>
 
-        </section>
+    <section class="w3l-features-1">
+        <!-- /features -->
+        <div class="features py-5">
+            <div class="container">
 
-        <section class="w3l-features-1">
-            <!-- /features -->
-            <div class="features py-5">
-                <div class="container">
-
-                    <div class="fea-gd-vv row ">	
-                        <div class="col-lg-3 col-sm-6">	
-                            <div class="float-lt feature-gd">	
-                                <div class="icon"> <span class="fa fa-microchip" aria-hidden="true"></span></div>
-                                <div class="icon-info">
-                                    <h5>Best engineering</h5>
-                                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur </p>
-                                </div>
+                <div class="fea-gd-vv row ">	
+                    <div class="col-lg-3 col-sm-6">	
+                        <div class="float-lt feature-gd">	
+                            <div class="icon"> <span class="fa fa-microchip" aria-hidden="true"></span></div>
+                            <div class="icon-info">
+                                <h5>Human team</h5>
+                                <p class="mt-2">Our employees are our best customer and our main asset </p>
+                            </div>
+                        </div>
+                    </div>	
+                    <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">	
+                        <div class="float-mid feature-gd">	
+                            <div class="icon"> <span class="fa fa-flask" aria-hidden="true"></span></div>
+                            <div class="icon-info">
+                                <h5>Innovation</h5>
+                                <p class="mt-2">A focus of all our processes towards maximum efficiency  </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">	
+                        <div class="float-rt feature-gd">
+                            <div class="icon"> <span class="fa fa-fire" aria-hidden="true"></span></div>
+                            <div class="icon-info">
+                                <h5>Security and health at work</h5>
+                                <p class="mt-2">The most important thing is safety and health, there is no value higher than that of people's lives. </p>
+                            </div>
+                        </div>
+                    </div>	 
+                    <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">	
+                        <div class="float-lt feature-gd">	
+                            <div class="icon"> <span class="fa fa-cog" aria-hidden="true"></span></div>
+                            <div class="icon-info">
+                                <h5>Sustainable development</h5>
+                                <p class="mt-2">Quality as a basic element of our service culture </p>
                             </div>
                         </div>	
-                        <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">	
-                            <div class="float-mid feature-gd">	
-                                <div class="icon"> <span class="fa fa-flask" aria-hidden="true"></span></div>
-                                <div class="icon-info">
-                                    <h5>Chemical research</h5>
-                                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur </p>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">	
-                            <div class="float-rt feature-gd">
-                                <div class="icon"> <span class="fa fa-fire" aria-hidden="true"></span></div>
-                                <div class="icon-info">
-                                    <h5>Rapid delivery</h5>
-                                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur </p>
-                                </div>
-                            </div>
-                        </div>	 
-                        <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4">	
-                            <div class="float-lt feature-gd">	
-                                <div class="icon"> <span class="fa fa-cog" aria-hidden="true"></span></div>
-                                <div class="icon-info">
-                                    <h5>Call center</h5>
-                                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur </p>
-                                </div>
-                            </div>	
-                        </div>	
-                    </div>  
+                    </div>	
+                </div>  
+            </div>
+        </div>
+    </section>
+    <!--  About section -->
+    <div class="w3l-about1 py-5" id="about">
+        <div class="container py-lg-3">
+
+            <div class="aboutgrids row">
+                <div class="col-lg-6 aboutgrid2">
+                    <img src="resources/images/luminaria7.jpg" alt="about image" class="img-fluid"></img>
+                </div>
+                <div class="col-lg-6 aboutgrid1 mt-lg-0 mt-4 pl-lg-5">
+                    <h4>Mission</h4>
+                    <p>Serve as contractors or as promoters to small and large Clients, Owners and / or Concessionaire Entities around the world to create and operate industrial infrastructures that are competitive and durable with the best products, processes and technologies, motivated human teams and, if required , attracting the necessary resources to carry out the best project.</p>
+                    <!--<p>Servir como contratistas o como promotores a pequeños y grandes Clientes, Propietarios y/o Entidades Concesionarias en todo el mundo para crear y operar infraestructuras industriales que sean competitivas y duraderas con los mejores productos, procesos y tecnologías, equipos humanos motivados y, si se requiere, atrayendo los recursos necesarios para realizar el mejor proyecto.</p>-->
+
+                    <br>
+
+                        <h4>Vision</h4>
+                        <p>To be a world benchmark in industrial infrastructures that provides its Clients with high quality services through local teams capable of creating and sharing economic, social and environmental values in the community.</p>
+                        <!--<p>Ser un referente mundial en infraestructuras industriales que da a sus Clientes servicios de alta calidad a través de equipos locales capaces de crear y compartir valores económicos, sociales y medioambientales en la comunidad</p>-->    
+                    </br>        
                 </div>
             </div>
-            <!-- //features -->
-        </section>
-        <!--  About section -->
-        <div class="w3l-about1 py-5" id="about">
-            <div class="container py-lg-3">
-
-                <div class="aboutgrids row">
-                    <div class="col-lg-6 aboutgrid2">
-                        <img src="resources/images/index-1.jpg" alt="about image" class="img-fluid"></img>
+        </div>
+    </div>
+    <!--  //About section -->
+    <section class="w3l-services2" id="stats">
+        <div class="features-with-17_sur py-5">
+            <div class="container py-md-3">
+                <div class="row pt-lg-5 mt-lg-3">
+                    <div class="col-lg-4 features-with-17-left_sur">
+                        <p> Values </p>
+                        <p>Strong culture of service to build solid and trusting relationships with our Clients in the long term.
+                            Individual responsibility and entrepreneurial spirit of our employees, thanks to a flexible organization and a personalized incentive system.
+                            Vocation for innovation and technological integration, while maintaining excellence in quality, safety, occupational health and environmental protection.</p>
+                        <!--Fuerte cultura de servicio para construir relaciones sólidas y de confianza con nuestros Clientes a largo plazo.
+                            Responsabilidad individual y espíritu emprendedor de nuestros empleados, gracias a una organización flexible y un sistema personalizado de incentivos.
+                            Vocación por la innovación y la integración tecnológica, manteniendo a la par la excelencia en calidad, seguridad, salud laboral y protección medioambiental.</p>-->
                     </div>
-                    <div class="col-lg-6 aboutgrid1 mt-lg-0 mt-4 pl-lg-5">
-                        <h4>How we can help you?</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit recusandae eum necessitatibus blanditiis porro cum, facere qui impedit dolor doloribus quis reiciendis ullam repellendus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit recusandae eum </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, velit recusandae eum necessitatibus blanditiis porro cum, facere qui impedit dolor doloribus quis reiciendis ullam repellendus.</p>
-
-                        <a class="btn btn-secondary btn-theme2" href="about.html"> About Us</a>
+                    <div class="col-lg-8 my-lg-0 my-5 align-self-center features-with-17-right_sur">
+                        <div class="features-with-17-right-tp_sur text-center">
+                            <div class="features-with-17-left1">
+                                <span class="fa fa-user s4"></span>		
+                            </div>
+                            <div class="features-with-17-left2">
+                                <h6>60</h6>
+                                <p>Countries</p>		
+                            </div>
+                        </div>
+                        <div class="features-with-17-right-tp_sur text-center">
+                            <div class="features-with-17-left1">
+                                <span class="fa fa-handshake-o s5"></span>		
+                            </div>
+                            <div class="features-with-17-left2">
+                                <h6>30.000</h6>
+                                <p>Employs more than</p>			
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--  //About section -->
-        <section class="w3l-services2" id="stats">
-            <div class="features-with-17_sur py-5">
-                <div class="container py-md-3">
-
-                    <div class="row pt-lg-5 mt-lg-3">
-                        <div class="col-lg-4 features-with-17-left_sur">
-                            <h4 class="lft-head">We're thriving and building better products</h4>
-                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis.</p>
-                        </div>
-                        <div class="col-lg-8 my-lg-0 my-5 align-self-center features-with-17-right_sur">
-                            <div class="features-with-17-right-tp_sur text-center">
-                                <div class="features-with-17-left1">
-                                    <span class="fa fa-user s4"></span>		
-                                </div>
-                                <div class="features-with-17-left2">
-                                    <h6>1100</h6>
-                                    <p>HAPPY CLIENT</p>		
-                                </div>
-                            </div>
-                            <div class="features-with-17-right-tp_sur text-center">
-                                <div class="features-with-17-left1">
-                                    <span class="fa fa-handshake-o s5"></span>		
-                                </div>
-                                <div class="features-with-17-left2">
-                                    <h6>1208</h6>
-                                    <p>WORKERS HAND</p>			
-                                </div>
-                            </div>
-                            <div class="features-with-17-right-tp_sur text-center">
-                                <div class="features-with-17-left1">
-                                    <span class="fa fa-lock s3"></span>		
-                                </div>
-                                <div class="features-with-17-left2">
-                                    <h6>1250</h6>
-                                    <p>ACTIVE EXPERTS</p>	
-                                </div>
-                            </div>
-
-
-
-                        </div>
+    </section>
+    <section class="w3l-features-8">
+        <div class="fea-gd-vv text-center row mt-5 pt-3">
+            <div class="col-lg-4 col-md-6">	
+                <div class="float-top">	
+                    <a href="services.html"><img src="resources/images/luminaria6.jpg" class="img-responsive" alt=""></img></a>
+                    <div class="float-lt feature-gd">	
+                        <h3><a href="services.html">News</a> </h3>
+                        <p> SELLS TO RED ELÉCTRICA DE PERÚ, ASSETS OF HIGH VOLTAGE POWER LINES FOR 180 MILLION EUROS</p>
+                        <!--<a class="btn btn-secondary btn-theme4 mt-4" href="services.html"> More Details</a>-->
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="w3l-features-8">
-            <!-- /features -->
-            <div class="features py-5" id="features">
-                <div class="container py-md-3">
-
-                    <div class="heading text-center mx-auto">
-                        <h3 class="head">Industries Served</h3>
-                        <p class="my-3 head"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                            Nulla mollis dapibus nunc, ut rhoncus
-                            turpis sodales quis. Integer sit amet mattis quam.</p>
-
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-5">	
+                <div class="float-top">	
+                    <a href="services.html"><img src="resources/images/luminaria5.jpg" class="img-responsive" alt=""></img></a>
+                    <div class="float-lt feature-gd">	
+                        <h3><a href="services.html">News</a> </h3>
+                        <p> INSTALL THE FIRST TURBINE OF WHAT WILL BE THE LARGEST MARINE WIND FARM WITH FLOATING TECHNOLOGY IN THE WORLD </p>
+                        <!--<a class="btn btn-secondary btn-theme4 mt-4" href="services.html"> More Details</a>-->
                     </div>
-                    <div class="fea-gd-vv text-center row mt-5 pt-3">
-
-                        <div class="col-lg-4 col-md-6">	
-                            <div class="float-top">	
-                                <a href="services.html"><img src="resources/images/g1.jpg" class="img-responsive" alt=""></img></a>
-                                <div class="float-lt feature-gd">	
-                                    <h3><a href="services.html">Metallurgical Engineering</a> </h3>
-                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-                                    <a class="btn btn-secondary btn-theme4 mt-4" href="services.html"> More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-md-0 mt-5">	
-                            <div class="float-top">	
-                                <a href="services.html"><img src="resources/images/g2.jpg" class="img-responsive" alt=""></img></a>
-                                <div class="float-lt feature-gd">	
-                                    <h3><a href="services.html">Metal Working Tools</a> </h3>
-                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-                                    <a class="btn btn-secondary btn-theme4 mt-4" href="services.html"> More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">	
-                            <div class="float-top-1 text-left pl-4 pr-4 py-5">	
-                                <h4 class="">Jobs</h4>
-                                <p class="mt-2"> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-                                <div class="top-right mt-4 pt-2">
-                                    <div class="icon-left pt-1">
-                                        <span class="fa fa-arrow-right"></span>
-                                    </div>
-                                    <div class="icon-text-left">
-                                        <h3 class=""><a href="services.html">Metal Working Tools</a> </h3>
-                                        <p class="mt-2"> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-                                    </div>
-                                </div>
-                                <div class="top-right mt-3">
-                                    <div class="icon-left pt-1">
-                                        <span class="fa fa-arrow-right"></span>
-                                    </div>
-                                    <div class="icon-text-left">
-                                        <h3 class=""><a href="services.html">Metal Working Tools</a> </h3>
-                                        <p class="mt-2"> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-                                    </div>
-                                </div>
-                            </div>	
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5">	
-                            <div class="float-top">	
-                                <a href="services.html"><img src="resources/images/g3.jpg" class="img-responsive" alt=""></img></a>
-                                <div class="float-lt feature-gd">	
-                                    <h3><a href="services.html">Grinding Lapping</a> </h3>
-                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-                                    <a class="btn btn-secondary btn-theme4 mt-4" href="services.html"> More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5">
-                            <div class="float-top">		
-                                <a href="services.html"><img src="resources/images/g7.jpg" class="img-responsive" alt=""></img></a>
-                                <div class="float-lt feature-gd">	
-                                    <h3><a href="services.html">Precision Metal Cutting</a> </h3>
-                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-                                    <a class="btn btn-secondary btn-theme4 mt-4" href="services.html"> More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-5">	
-                            <div class="float-top">
-                                <a href="services.html"><img src="resources/images/g6.jpg" class="img-responsive" alt=""></img></a>
-                                <div class="float-lt feature-gd">	
-                                    <h3><a href="services.html">Automotive Industry Line</a> </h3>
-                                    <p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
-                                    <a class="btn btn-secondary btn-theme4 mt-4" href="services.html"> More Details</a>
-                                </div>
-                            </div>
-                        </div>						 				 
-                    </div>  
                 </div>
             </div>
-            <!-- //features -->
-        </section>
-        <!-- customers4 block -->
-        <section class="w3l-customers-4" id="testimonials">
-            <div id="customers4-block" class="py-5">
-                <div class="container py-md-3">
-
-
-                    <div id="customerhnyCarousel" class="carousel slide" data-ride="carousel">
-
-                        <ol class="carousel-indicators">
-                            <li data-target="#customerhnyCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#customerhnyCarousel" data-slide-to="1"></li>
-                            <li data-target="#customerhnyCarousel" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Carousel items -->
-                        <div class="carousel-inner pb-5 mb-md-5 pt-md-5">
-
-                            <div class="carousel-item active">
-                                <div class="section-title">
-                                    <div class="item-top">
-                                        <div class="item text-center">
-                                            <div class="imgTitle">
-                                                <img src="resources/images/c1.jpg" class="img-responsive" alt=""></img>
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">	
+                <div class="float-top-1 text-left pl-4 pr-4 py-5">	
+                    <div class="top-right mt-4 pt-2">
+                        <div class="icon-left pt-1">
+                            <span class="fa fa-arrow-right"></span>
+                        </div>
+                        <div class="icon-text-left">
+                            <h3 class=""><a href="services.html">News</a> </h3>
+                            <p class="mt-2"> INFRASTRUCTURAS HIDRAULICAS WILL REPAIR THE CHANGUINOLA HYDROELECTRIC TUNNEL IN PANAMA </p>
+                        </div>
+                    </div>
+                    <div class="top-right mt-3">
+                        <div class="icon-left pt-1">
+                            <span class="fa fa-arrow-right"></span>
+                        </div>
+                        <div class="icon-text-left">
+                            <h3 class=""><a href="services.html">News</a> </h3>
+                            <p class="mt-2"> ACS LAUNCHES ELEIA TO SELL THE ELECTRICITY OF ITS RENEWABLES </p>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+        </div>    
+    </section>
+            <section class="w3l-customers-4" id="testimonials">
+                <div id="customers4-block" class="py-5">
+                    <div class="container py-md-3">
+                        <div id="customerhnyCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#customerhnyCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#customerhnyCarousel" data-slide-to="1"></li>
+                                <li data-target="#customerhnyCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel items -->
+                            <div class="carousel-inner pb-5 mb-md-5 pt-md-5">
+                                <div class="carousel-item active">
+                                    <div class="section-title">
+                                        <div class="item-top">
+                                            <div class="item text-center">
+                                                <div class="imgTitle">
+                                                    <img src="resources/images/userman.jpg" class="img-responsive" alt=""></img>
+                                                </div>
+                                                <h6 class="mt-3">Yohan Pereira</h6>
                                             </div>
-                                            <h6 class="mt-3">Steve Smith</h6>
-                                            <p class="">Client</p>
-                                            <h5>" Magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor " </h5>
-
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="section-title">
+                                        <div class="item-top">
+                                            <div class="item text-center">
+                                                <div class="imgTitle">
+                                                    <img src="resources/images/userman.jpg" class="img-responsive" alt=""></img>
+                                                </div>
+                                                <h6 class="mt-3">Sandra Silva</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="section-title">
+                                        <div class="item-top">
+                                            <div class="item text-center">
+                                                <div class="imgTitle">
+                                                    <img src="resources/images/userman.jpg" class="img-responsive" alt=""></img>
+                                                </div>
+                                                <h6 class="mt-3">Javier Sierra</h6>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--.item-->
-
-                            <div class="carousel-item">
-                                <div class="section-title">
-                                    <div class="item-top">
-                                        <div class="item text-center">
-                                            <div class="imgTitle">
-                                                <img src="resources/images/c2.jpg" class="img-responsive" alt=""></img>
-                                            </div>
-                                            <h6 class="mt-3">Jessey Rider</h6>
-                                            <p class="">Worker</p>
-                                            <h5>" Magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor " </h5>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!--.item-->
-                            <div class="carousel-item">
-                                <div class="section-title">
-                                    <div class="item-top">
-                                        <div class="item text-center">
-                                            <div class="imgTitle">
-                                                <img src="resources/images/c3.jpg" class="img-responsive" alt="" ></img>
-                                            </div>
-                                            <h6 class="mt-3">Mark Stoins</h6>
-                                            <p class="">Engineer</p>
-                                            <h5>" Magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor " </h5>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--.item-->
-
-                        </div>
-                        <!--.carousel-inner-->
-                    </div>
-
-
-
-
-                </div>
-            </div>
-
-
-        </section>
-        <!-- homepage blog grids -->
-        <section class="news-1" id="blog">
-            <div class="news py-5">
-                <div class="container py-md-3">
-                    <div class="heading text-center mx-auto">
-                        <h3 class="head">Latest News  Events</h3>
-                        <p class="my-3 head"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                            Nulla mollis dapibus nunc, ut rhoncus
-                            turpis sodales quis. Integer sit amet mattis quam.</p>
-
-                    </div>
-                    <div class="blog-grids row mt-5">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-grid" id="zoomIn">
-                                <a href="#">
-                                    <figure><img src="resources/images/g10.jpg" class="img-fluid" alt=""></img></figure>
-                                </a>
-                                <div class="blog-info">
-                                    <h3><a href="#">Seven Outrageous Ideas Industry</a> </h3>
-                                    <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                        Nulla mollis dapibus nunc</p>
-                                    <ul>
-                                        <li><a href="#author"><span class="fa fa-user-o mr-2"></span>Johnson smith</a></li>
-                                        <li><a href="#author"><span class="fa fa-calendar mr-2"></span>Jan 16, 2020</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
-                            <div class="blog-grid" id="zoomIn">
-                                <a href="#">
-                                    <figure><img src="resources/images/g9.jpg" class="img-fluid" alt=""></img></figure>
-                                </a>
-                                <div class="blog-info">
-                                    <h3><a href="#">Seven Doubts You Should Clarify About</a> </h3>
-                                    <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                        Nulla mollis dapibus nunc</p>
-                                    <ul>
-                                        <li><a href="#author"><span class="fa fa-user-o mr-2"></span>Alexander</a></li>
-                                        <li><a href="#author"><span class="fa fa-calendar mr-2"></span>Jan 16, 2020</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
-                            <div class="blog-grid" id="zoomIn">
-                                <a href="#">
-                                    <figure><img src="resources/images/g8.jpg" class="img-fluid" alt=""></img></figure>
-                                </a>
-                                <div class="blog-info">
-                                    <h3><a href="#">Why You Should Not Go To Industry</a> </h3>
-                                    <p> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                        Nulla mollis dapibus nunc</p>
-                                    <ul>
-                                        <li><a href="#author"><span class="fa fa-user-o mr-2"></span>Elizabeth ker</a></li>
-                                        <li><a href="#author"><span class="fa fa-calendar mr-2"></span>Jan 16, 2020</a></li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- //homepage blog grids -->
-
-
-        <!-- grids block 5 -->
-        <section class="w3l-footer-29-main" id="footer">
-            <div class="footer-29">
-                <div class="grids-forms-1 pb-5">
-                    <div class="container">
-                        <div class="grids-forms">
-                            <div class="main-midd">
-                                <h4 class="title-head">Newsletter – Get Updates Latest News</h4>
-
-                            </div>
-                            <div class="main-midd-2">
-                                <form action="#" method="post" class="rightside-form">
-                                    <input type="email" name="email" placeholder="Enter your email"></input>
-                                    <button class="btn" type="submit">Subscribe</button>
-                                </form>
+            </section> 
+            <section class="w3l-footer-29-main" id="footer">
+                <div class="footer-29">
+                    <div class="grids-forms-1 pb-5">
+                        <div class="container pt-5">
+                            <div class="bottom-copies text-center">
+                                <p class="copy-footer-29">© 2020. All rights reserved | Designed by SAOT</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container pt-5">
+                </div>    
+                <button onclick="topFunction()" id="movetop" title="Go to top">
+                    <span class="fa fa-angle-up"></span>
+                </button>
+                <script>
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function () {
+                        scrollFunction()
+                    };
 
-                    <div class="d-grid grid-col-4 footer-top-29">
-                        <div class="footer-list-29 footer-1">
-                            <h6 class="footer-title-29">About Us</h6>
-                            <ul>
-                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
-                            </ul>
-                            <div class="main-social-footer-29">
-                                <h6 class="footer-title-29">Social Links</h6>
-                                <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
-                                <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-                                <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-                                <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
-                                <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
-                            </div>
-                        </div>
-                        <div class="footer-list-29 footer-2">
-                            <ul>
-                                <h6 class="footer-title-29">Useful Links</h6>
-                                <li><a href="contact.html">Privacy Policy</a></li>
-                                <li><a href="contact.html">Help Desk</a></li>
-                                <li><a href="services.html">Projects</a></li>
-                                <li><a href="contact.html">All Users</a></li>
-                                <li><a href="contact.html">Support</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-list-29 footer-3">
-                            <div class="properties">
-                                <h6 class="footer-title-29">Recent Projects</h6>
-                                <a href="#"><img src="resources/images/g2.jpg" class="img-responsive" alt=""></img><p>We Are Leading International Consultiing Agency</p></a>
-                                <a href="#"><img src="resources/images/g8.jpg" class="img-responsive" alt=""></img><p>Digital Marketing Agency all the foundational tools</p></a>
-                                <a href="#"><img src="resources/images/g6.jpg" class="img-responsive" alt=""></img><p>Doloremque velit sapien labore eius itna</p></a>
-                            </div>
-                        </div>
-                        <div class="footer-list-29 footer-4">
-                            <ul>
-                                <h6 class="footer-title-29">Quick Links</h6>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="#"> Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="bottom-copies text-center">
-                        <p class="copy-footer-29">© 2020 Companies. All rights reserved | Designed by <a href="https://w3layouts.com">W3layouts</a></p>
+                    function scrollFunction() {
+                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                            document.getElementById("movetop").style.display = "block";
+                        } else {
+                            document.getElementById("movetop").style.display = "none";
+                        }
+                    }
 
-                    </div>
-                </div>
-            </div>
-            <!-- move top -->
-            <button onclick="topFunction()" id="movetop" title="Go to top">
-                <span class="fa fa-angle-up"></span>
-            </button>
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                        document.body.scrollTop = 0;
+                        document.documentElement.scrollTop = 0;
+                    }
+                </script>
+            </section>
+            <script src="resources/js/jquery-3.3.1.min.js"></script>
             <script>
-                // When the user scrolls down 20px from the top of the document, show the button
-                window.onscroll = function () {
-                    scrollFunction()
-                };
-
-                function scrollFunction() {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        document.getElementById("movetop").style.display = "block";
-                    } else {
-                        document.getElementById("movetop").style.display = "none";
-                    }
-                }
-
-                // When the user clicks on the button, scroll to the top of the document
-                function topFunction() {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
-            </script>
-            <!-- /move top -->
-        </section>
-        <!-- // grids block 5 -->
-        <script src="resources/js/jquery-3.3.1.min.js"></script>
-        <!-- //footer-28 block -->
-    
-
-        <script>
-                $(function () {
-                    $('.navbar-toggler').click(function () {
-                        $('body').toggleClass('noscroll');
-                    })
-                });
-        </script>
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
-
-
-        <!-- Smooth scrolling -->
-
-        <script src="resources/js/owl.carousel.js"></script>
-
-        <!-- script for -->
-        <script>
-                $(document).ready(function () {
-                    $('.owl-one').owlCarousel({
-                        loop: true,
-                        margin: 0,
-                        nav: true,
-                        responsiveClass: true,
-                        autoplay: false,
-                        autoplayTimeout: 5000,
-                        autoplaySpeed: 1000,
-                        autoplayHoverPause: false,
-                        responsive: {
-                            0: {
-                                items: 1,
-                                nav: false
-                            },
-                            480: {
-                                items: 1,
-                                nav: false
-                            },
-                            667: {
-                                items: 1,
-                                nav: true
-                            },
-                            1000: {
-                                items: 1,
-                                nav: true
-                            }
-                        }
-                    })
-                })
-        </script>
-        <!-- //script -->
-        <script src="resources/js/smartphoto.js"></script>
-        <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    const sm = new SmartPhoto(".js-img-viwer", {
-                        showAnimation: false
+                    $(function () {
+                        $('.navbar-toggler').click(function () {
+                            $('body').toggleClass('noscroll');
+                        })
                     });
-                    // sm.destroy();
-                });
-        </script>
+            </script>
 
-        <script src="resources/js/owl.carousel.js"></script>
-        <!-- script for -->
-        <script>
-            $(document).ready(function () {
-                $('.owl-one').owlCarousel({
-                    loop: true,
-                    margin: 0,
-                    nav: false,
-                    responsiveClass: true,
-                    autoplay: false,
-                    autoplayTimeout: 5000,
-                    autoplaySpeed: 1000,
-                    autoplayHoverPause: false,
-                    responsive: {
-                        0: {
-                            items: 1,
-                            nav: false
-                        },
-                        480: {
-                            items: 1,
-                            nav: false
-                        },
-                        667: {
-                            items: 1,
-                            nav: true
-                        },
-                        1000: {
-                            items: 1,
-                            nav: true
-                        }
-                    }
-                })
-            })
-        </script>
-        <!-- //script -->
-        <!-- /main-slider -->
-    
-</html>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+            </script>
+
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+            </script>
+            <script src="resources/js/owl.carousel.js"></script>
+            <script>
+                    $(document).ready(function () {
+                        $('.owl-one').owlCarousel({
+                            loop: true,
+                            margin: 0,
+                            nav: true,
+                            responsiveClass: true,
+                            autoplay: false,
+                            autoplayTimeout: 5000,
+                            autoplaySpeed: 1000,
+                            autoplayHoverPause: false,
+                            responsive: {
+                                0: {
+                                    items: 1,
+                                    nav: false
+                                },
+                                480: {
+                                    items: 1,
+                                    nav: false
+                                },
+                                667: {
+                                    items: 1,
+                                    nav: true
+                                },
+                                1000: {
+                                    items: 1,
+                                    nav: true
+                                }
+                            }
+                        })
+                    })
+            </script>
+            <script src="resources/js/smartphoto.js"></script>
+            <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const sm = new SmartPhoto(".js-img-viwer", {
+                            showAnimation: false
+                        });
+                        // sm.destroy();
+                    });
+            </script>
+            <script src="resources/js/owl.carousel.js"></script>
+            <script>
+                    $(document).ready(function () {
+                        $('.owl-one').owlCarousel({
+                            loop: true,
+                            margin: 0,
+                            nav: false,
+                            responsiveClass: true,
+                            autoplay: false,
+                            autoplayTimeout: 5000,
+                            autoplaySpeed: 1000,
+                            autoplayHoverPause: false,
+                            responsive: {
+                                0: {
+                                    items: 1,
+                                    nav: false
+                                },
+                                480: {
+                                    items: 1,
+                                    nav: false
+                                },
+                                667: {
+                                    items: 1,
+                                    nav: true
+                                },
+                                1000: {
+                                    items: 1,
+                                    nav: true
+                                }
+                            }
+                        })
+                    })
+            </script>
+            </html>
