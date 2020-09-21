@@ -1,0 +1,6 @@
+com\saot\controller\UsuarioController.class
+com\saot\ejb\UsuarioFacade.class
+com\saot\ejb\UsuarioFacadeLocal.class
+com\saot\ejb\AbstractFacade.class
+com\saot\model\Usuario.class
+com\saot\model\Usuario_.class

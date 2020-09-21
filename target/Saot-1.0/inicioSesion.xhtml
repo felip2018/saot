@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <meta charset="utf-8"></meta>
+        <title>Iniciar Sesión</title>
+
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="resources/css/cssLayout.css"></link>
+    </h:head>
+    <h:body class="login_body">
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div id="login_container" class="col-3">
+                    <div class="header_back">
+                        <h:form>
+                            <p:link class="btn btn-secondary" outcome="index">
+                                <h:outputLabel class="fas fa-chevron-left"/> #{msgs['login.btnVolver']}
+                            </p:link>
+                        </h:form>
+                    </div>
+                    <div id="header_login">
+                        <img src="resources/images/imagenlogoactualizado.png" alt="Logotipo" id="logo" style="width:180px;height: 180px;"></img><br/>
+                    </div>
+                    <h:form class="px-4 py-3">
+                        <div class="form-group">
+                            <h:outputLabel for="correo" value="#{msgs['login.lblCorreo']}"/>
+                            <h:inputText id="correo" class="form-control" required="true" 
+                                         value="#{usuarioController.usuario.correo}"/>
+                            <h:message class="alert-error" for="correo" />
+                        </div>
+                        <div class="form-group">
+                            <h:outputLabel for="clave" value="#{msgs['login.lblClave']}"/>
+                            <p:password id="clave" class="form-control" required="true" 
+                                        value="#{usuarioController.usuario.clave}"/>
+                            <h:message class="alert-error" for="clave" />
+                        </div>
+                        <p:messages showDetail="true" rendered="true"/>
+                        <h:commandButton class="btn btn-primary btn-block btn-login" 
+                                         value="#{msgs['login.btnIniciarSesion']}" 
+                                         action="#{usuarioController.iniciarSesion()}"/>
+                        
+                    </h:form>
+                    <div class="dropdown-divider"></div>
+                    <h:form>
+                        
+
+                        <p:commandLink class="btn dropdown-item" 
+                                       value="#{msgs['login.lblOlvideClave']}" 
+                                       onclick="PF('wdlgRecuperacion').show();"/>
+                        
+                        <!--<p:commandButton class="btn dropdown-item" onclick="verModal()" value="Modal"/>-->
+                                       
+                    </h:form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p:dialog header="¿Olvidaste tu contraseña?" widgetVar="wdlgRecuperacion" modal="true" width="600">
+                        <h:form>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p:outputLabel for="correo_recuperacion" value="Ingresa el correo electrónico de tu cuenta para reestablecer tu clave."/>
+                                    <p:inputText id="correo_recuperacion" class="form-control"/>
+                                </div>
+                                <div class="col-12">
+                                    <hr></hr>
+                                    <p:commandButton class="btn btn-secondary" 
+                                                     value="Cancelar"
+                                                     onclick="PF('wdlgRecuperacion').hide();"/>
+                                    <p:commandButton class="btn btn-primary" value="Aceptar"/>
+                                </div>
+                            </div>
+                        </h:form>
+                    </p:dialog>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+    </h:body>
+</html>

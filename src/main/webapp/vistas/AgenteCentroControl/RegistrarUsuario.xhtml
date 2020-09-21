@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./../../WEB-INF/templates/AgenteCentroControlTemplate.xhtml">
+
+            <ui:define name="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 alert alert-info">
+                            <h3>Formulario de registro de usuario</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h:form>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="primerNombre" value="Primer Nombre"/>
+                                        <p:inputText id="primerNombre" class="form-control" required="true" 
+                                                     value="#{usuarioController.usuario.primerNombre}"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="segundoNombre" value="Segundo Nombre"/>
+                                        <p:inputText id="segundoNombre" class="form-control" 
+                                                     value="#{usuarioController.usuario.segundoNombre}"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="primerApellido" value="Primer Apellido"/>
+                                        <p:inputText id="primerApellido" class="form-control" required="true" 
+                                                     value="#{usuarioController.usuario.primerApellido}"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="segundoApellido" value="Segundo Apellido"/>
+                                        <p:inputText id="segundoApellido" class="form-control" 
+                                                     value="#{usuarioController.usuario.segundoApellido}"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="tipoIdentificacion" value="Tipo Documento"/>
+                                        <p:selectOneMenu id="tipoIdentificacion" class="form-control" required="true" 
+                                                         value="#{usuarioController.usuario.idTipoDocumento}">
+                                            <f:selectItem itemValue="" itemLabel="-Tipo identificación" />
+                                            <f:selectItem itemValue="1" itemLabel="CÉDULA DE CIUDADANÍA" />
+                                            <f:selectItem itemValue="2" itemLabel="CÉDULA DE EXTRANJERÍA" />
+                                            <f:selectItem itemValue="3" itemLabel="PASAPORTE" />
+                                        </p:selectOneMenu>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="numeroIdentificacion" value="Número Documento"/>
+                                        <p:inputText id="numeroIdentificacion" class="form-control" required="true"
+                                                     value="#{usuarioController.usuario.documento}"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <p:outputLabel for="direccion" value="Dirección"/>
+                                        <p:inputText id="direccion" class="form-control" required="true"
+                                                     value="#{usuarioController.usuario.direccion}"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="celular" value="Celular"/>
+                                        <p:inputText id="celular" class="form-control" required="true" 
+                                                     value="#{usuarioController.usuario.celular}"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="genero" value="Género"/>
+                                        <p:selectOneMenu id="genero" class="form-control" required="true"
+                                                         value="#{usuarioController.usuario.genero}">
+                                            <f:selectItem itemValue="" itemLabel="-Seleccione" />
+                                            <f:selectItem itemValue="FEMENINO" itemLabel="FEMENINO" />
+                                            <f:selectItem itemValue="MASCULINO" itemLabel="MASCULINO" />
+                                            <f:selectItem itemValue="OTRO" itemLabel="OTRO" />
+                                        </p:selectOneMenu>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="correo" value="Correo Electrónico"/>
+                                        <p:inputText id="correo" class="form-control" required="true" 
+                                                     value="#{usuarioController.usuario.correo}"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="clave" value="Contraseña"/>
+                                        <p:password id="clave" class="form-control" required="true" 
+                                                    feedback="true"
+                                                    value="#{usuarioController.usuario.clave}"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="fechaNacimiento" value="Fecha de Nacimiento"/>
+                                        <p:datePicker id="fechaNacimiento" class="form-control" required="true" 
+                                                     value="#{usuarioController.usuario.fechaNacimiento}"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                        <p:outputLabel for="rol" value="Rol de Usuario"/>
+                                        <p:selectOneMenu id="rol" class="form-control" required="true"
+                                                         value="#{usuarioController.usuario.idRol}">
+                                            <f:selectItem itemValue="" itemLabel="-Seleccione" />
+                                            <f:selectItem itemValue="1" itemLabel="AGENTE CENTRO DE CONTROL" />
+                                            <f:selectItem itemValue="2" itemLabel="LIDER DE CUADRILLA" />
+                                            <f:selectItem itemValue="3" itemLabel="AGENTE DE LOGISTICA" />
+                                        </p:selectOneMenu>
+                                    </div>
+                                    <div class="col-12">
+                                        <p:messages showDetail="true" rendered="true"/>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <p:separator/>
+                                        <h:commandButton class="btn btn-primary btn-block" value="Guardar Usuario"
+                                                         action="#{usuarioController.registrarUsuario()}"/>
+                                    </div>
+                                </div>
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+                
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
