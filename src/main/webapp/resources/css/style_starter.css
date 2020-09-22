@@ -2323,33 +2323,33 @@
  */
 :root {
     --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #000;
-    --secondary: #FEBC35;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    indigo: #6610f2;
+    purple: #6f42c1;
+    pink: #e83e8c;
+    red: #dc3545;
+    orange: #fd7e14;
+    yellow: #ffc107;
+    green: #28a745;
+    teal: #20c997;
+    cyan: #17a2b8;
+    white: #fff;
+    gray: #6c757d;
+    gray-dark: #343a40;
+    primary: #000;
+    secondary: #FEBC35;
+    success: #28a745;
+    info: #17a2b8;
+    warning: #ffc107;
+    danger: #dc3545;
+    light: #f8f9fa;
+    dark: #343a40;
+    breakpoint-xs: 0;
+    breakpoint-sm: 576px;
+    breakpoint-md: 768px;
+    breakpoint-lg: 992px;
+    breakpoint-xl: 1200px;
+    font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
 *::before,
@@ -10315,7 +10315,7 @@ h4.sub-title {
     .w3l-header-4 nav ul ul li a:hover {
         background: transparent;
         transition: 0.3s ease; }
-    .w3l-header-4 nav a {
+    .w3l-header-4 nav a { 
         display: block;
         color: #fff; }
     .w3l-header-4 nav a:hover {
@@ -10742,7 +10742,7 @@ button.owl-next {
     -ms-transition: 0.3s ease-in; }
 
 .w3l-main-slider .banner-view {
-    background: url(../images/1.jpg) no-repeat center;
+    background: url(../images/luminaria8.jpg) no-repeat center;
     background-size: cover;
     min-height: calc(100vh - 50px);
     position: relative;
@@ -10751,15 +10751,15 @@ button.owl-next {
     align-items: center; }
 
 .w3l-main-slider .banner-top1 {
-    background: url(../images/2.jpg) no-repeat center;
+    background: url(../images/luminaria18.jpg) no-repeat center;
     background-size: cover; }
 
 .w3l-main-slider .banner-top2 {
-    background: url(../images/3.jpg) no-repeat center;
+    background: url(../images/luminaria17.jpg) no-repeat center;
     background-size: cover; }
 
 .w3l-main-slider .banner-top3 {
-    background: url(../images/4.jpg) no-repeat center;
+    background: url(../images/luminaria16.jpg) no-repeat center;
     background-size: cover; }
 
 .w3l-main-slider .banner-view:before {
@@ -11181,7 +11181,7 @@ button.owl-next {
     color: #fff; }
 
 .w3l-services2 .features-with-17_sur {
-    background: url(../images/ab-1.jpg) no-repeat;
+    background: url(../images/Descarga2.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -11313,7 +11313,7 @@ button.owl-next {
     font-weight: 600;
     margin-bottom: 15px; }
 .w3l-features-8 .float-top-1 {
-    background: url(../images/g5.jpg) no-repeat center;
+    background: url(../images/luminaria9.jpg) no-repeat center;
     background-size: cover;
     min-height: 502px;
     position: relative;
@@ -11388,7 +11388,7 @@ button.owl-next {
 .w3l-customers-4 {
     /*-- customers4 block --*/ }
 .w3l-customers-4 #customers4-block {
-    background: url(../images/ser-1.jpg) no-repeat center;
+    background: url(../images/luminaria12.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -11616,7 +11616,7 @@ button.owl-next {
     text-align: center; }
 
 .w3l-footer-29-main .footer-29 {
-    background: url(../images/3.jpg) no-repeat 0px 0px;
+    background: url(../images/luminaria2.jpg) no-repeat 0px 0px;
     background-size: cover;
     padding: 4rem 0px;
     background-attachment: fixed;

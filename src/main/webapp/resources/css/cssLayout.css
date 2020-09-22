@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+
 }
 
 .back_link{
@@ -29,7 +30,10 @@ body{
 
 
 .login_body{
-    background-image: url("../img/fondo3.jpg");	
+    background-image: url("../../resources/images/3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
 }
 #login_container{
     background: #ffffff;

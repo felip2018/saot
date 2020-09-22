@@ -23,10 +23,11 @@
                         </h:form>
                     </div>
                     <div id="header_login">
-                        <img src="resources/images/imagenlogoactualizado.png" alt="Logotipo" id="logo" style="width:180px;height: 180px;"></img><br/>
+                        <img src="resources/images/imagenlogoactualizado.png" alt="Logotipo" id="logo" style="width:100px; height: 100px;"></img><br/>
                     </div>
                     <h:form class="px-4 py-3">
                         <div class="form-group">
+                            <!--<h:outputLabel for="correo" value="#{msgs['login.lblCorreo']}"/>-->
                             <h:outputLabel for="correo" value="#{msgs['login.lblCorreo']}"/>
                             <h:inputText id="correo" class="form-control" required="true" 
                                          value="#{usuarioController.usuario.correo}"/>
