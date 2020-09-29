@@ -2,21 +2,32 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
     <link rel="stylesheet" href="resources/css/style_starter.css"></link>
-    <body>
+    <h:body>
 
         <ui:composition template="./../../WEB-INF/templates/AgenteCentroControlTemplate.xhtml">
 
             <ui:define name="content">
                 Bienvenido Agente Centro de Control
                 <p:contentFlow value="#{imagesView.images}" var="image">
-                    <p:graphicImage name="resources/images/#{image}" styleClass="content" />
+                    <p:graphicImage name="./../../resources/images/#{image}" styleClass="content" />
                     <div class="caption">#{image}</div>
                 </p:contentFlow>
+
+                <h:form>
+                    <p:fieldset legend="Toggleable" toggleable="true" toggleSpeed="500">
+                        <p:ajax event="toggle" listener="#{fieldsetView.handleToggle}"  />
+                        <h:panelGrid columns="2" cellpadding="5">
+                            <p:graphicImage name="./resources/images/luminaria2.jpg" />
+                            <h:outputText value="SELLS TO RED ELÉCTRICA DE PERÚ, ASSETS OF HIGH VOLTAGE POWER LINES FOR 180 MILLION EUROS"></h:outputText>
+                        </h:panelGrid>
+                    </p:fieldset>
+                </h:form>
             </ui:define>
         </ui:composition>
 
 
-    </body>
+    </h:body>
 </html>
