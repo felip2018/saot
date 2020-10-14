@@ -14,12 +14,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 alert alert-info">
-                            <h3>Usuarios del sistema</h3>
+                            <center><h3>Usuarios del sistema</h3></center>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <h:form>
+                            <p:growl id="msj"/>
+                            <h:form id="datos">
                                 <p:dataTable var="usr" value="#{usuarioController.listadoUsuarios}" rows="10"
                                              paginator="true"
                                              paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
@@ -47,6 +48,10 @@
                                         </h:outputText>
                                     </p:column>
 
+                                    <p:column headerText="Eliminar">
+                                        <p:commandButton value="Eliminar" actionListener="#{usuarioController.eliminar(usr)}" update="datos :msj" style="margin-right:20px;" icon="ui-icon-trash" />
+                                    </p:column>
+                                    
                                     <f:facet name="paginatorTopLeft">
                                         <p:commandButton type="button" icon="pi pi-refresh" />
                                     </f:facet>

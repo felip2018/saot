@@ -11,14 +11,18 @@
 
         <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"></link>
         <style>
-
+            .top{
+                padding: 10px;
+                text-align: center;
+            }
             .left{
-
+                top: 20px;  
                 padding: 10px;
                 height: 70vh;
             }
             .content{
                 padding: 30px;
+                min-height: calc(100vh - 120px);
             }
             .bottom{
                 padding: 10px;
@@ -41,15 +45,15 @@
                         <ui:insert name="left">
                             <h:form>
                                 <p:menu>
-                                    <p:menuitem value="Inicio" action="AgenteCentroControlInicio"/>
+                                    <p:menuitem value="Inicio" action="AgenteCentroControlInicio" icon="ui-icon-home"/>
                                     <p:submenu label="Usuarios">
-                                        <p:menuitem value="Lista" outcome="ListaUsuarios"/>
-                                        <p:menuitem value="Registrar" outcome="RegistrarUsuario"/>
+                                        <p:menuitem value="Lista" outcome="ListaUsuarios" icon="ui-icon-grip-solid-horizontal"/>
+                                        <p:menuitem value="Registrar" outcome="RegistrarUsuario" icon="ui-icon-clipboard"/>
                                     </p:submenu>
-                                    <p:submenu label="Ordenes de trabajo">
-                                        <p:menuitem value="Lista OT" outcome="listaOrdenes"/>
+                                    <p:submenu label="Ordenes de trabajo" icon="ui-icon-plusthick" >
+                                        <p:menuitem value="Lista OT" outcome="ListaOT" icon="ui-icon-folder-collapsed"/>
                                     </p:submenu>
-                                    <p:menuitem value="Cerrar sesión" outcome="/inicioSesion"/>
+                                    <p:menuitem value="Cerrar sesión" outcome="/inicioSesion" icon="ui-icon-cancel"/>
                                 </p:menu>
                             </h:form>
                         </ui:insert>

@@ -7,19 +7,22 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Agente Logistica</title>
+        <title>Agente Centro de Control</title>
 
         <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"></link>
         <style>
-
+            .top{
+                padding: 10px;
+                text-align: center;
+            }
             .left{
+                top: 20px;  
                 padding: 10px;
                 height: 70vh;
-
             }
             .content{
                 padding: 30px;
-
+                min-height: calc(100vh - 120px);
             }
             .bottom{
                 padding: 10px;
@@ -31,12 +34,8 @@
     </h:head>
 
     <h:body>
-
         <div id="top">
             <ui:insert name="top">
-                <div class="col-12 top">
-                    <b>Saot</b>
-                </div>
             </ui:insert>
         </div>
         <div class="row">
@@ -46,37 +45,29 @@
                         <ui:insert name="left">
                             <h:form>
                                 <p:menu>
-                                    <p:menuitem value="Inicio" action="AgenteCentroControlInicio"/>
-                                    <p:submenu label="Inventario">
-                                        <p:menuitem value="Material" /><!--outcome="ListaUsuarios"-->
-                                        <p:menuitem value="EPP" /><!--outcome="RegistrarUsuario"-->
-                                    </p:submenu>
-                                    <p:submenu label="Ordenes de trabajo">
-                                        <p:menuitem value="Lista OT" outcome="ListaOT"/>
-                                    </p:submenu>
-                                    <p:menuitem value="Cerrar sesión" outcome="/inicioSesion"/>
+                                    <p:menuitem value="Inicio" action="AgenteLogisticaInicio" icon="ui-icon-home"/>
+                                    <p:menuitem value="Cerrar sesión" outcome="/inicioSesion" icon="ui-icon-cancel"/>
                                 </p:menu>
                             </h:form>
                         </ui:insert>
                     </div>
-                        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 content">
-                            <ui:insert name="content">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 content">
+                        <ui:insert name="content">
 
-                            </ui:insert>
-                        </div>
+                        </ui:insert>
+                    </div>
                 </div>
             </div>
         </div>
-            <div class="bottom">
-                <ui:insert name="bottom">
-                    <div class="col-12">
-                        <b>2020 All rights reserved</b>
-                    </div>
-                </ui:insert>
-            </div>
 
-
-            <script type="text/javascript" src="../../resources/js/bootstrap.min.js"></script>
+        <div class="bottom">
+            <ui:insert name="bottom">
+                <div class="col-12">
+                    <b>2020 All rights reserved</b>
+                </div>
+            </ui:insert>
+        </div>
+        <script type="text/javascript" src="../../resources/js/bootstrap.min.js"></script>
     </h:body>
 
 </html>

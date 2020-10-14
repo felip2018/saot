@@ -1,10 +1,12 @@
 com\saot\ejb\UsuarioFacade.class
-com\saot\bean\Persona2Bean.class
-com\saot\model\Persona.class
+com\saot\ejb\OrdenTrabajoFacadeLocal.class
+com\saot\controller\OrdenTrabajoController.class
 com\saot\ejb\AbstractFacade.class
 com\saot\converter\RoleConverter.class
 com\saot\controller\UsuarioController.class
+com\saot\model\OrdenTrabajo_.class
+com\saot\ejb\OrdenTrabajoFacade.class
 com\saot\ejb\UsuarioFacadeLocal.class
+com\saot\model\OrdenTrabajo.class
 com\saot\model\Usuario.class
-com\saot\multimedia\ImagesView.class
 com\saot\model\Usuario_.class

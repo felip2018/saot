@@ -22,6 +22,7 @@ public class UsuarioController implements Serializable {
     
     @EJB
     private UsuarioFacadeLocal usuarioEJB;
+    String mensaje = "";
     
     @PostConstruct
     public void init(){
@@ -92,5 +93,19 @@ public class UsuarioController implements Serializable {
         } catch (Exception e) {
             throw e;
         }
+    }
+    
+        public void eliminar(Usuario U) {
+        try {
+            this.usuarioEJB.remove(U);
+            this.usuario = new Usuario();
+            this.mensaje = "Eliminado con exito";
+        } catch (Exception e) {
+            e.printStackTrace();
+            this.mensaje = "Error : " + e.getMessage();
+
+        }
+        FacesMessage mens = new FacesMessage(this.mensaje);
+        FacesContext.getCurrentInstance().addMessage(null, mens);
     }
 }

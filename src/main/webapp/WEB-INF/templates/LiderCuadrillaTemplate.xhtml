@@ -2,34 +2,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Agente Centro de Control</title>
-        
+
         <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"></link>
         <style>
             .top{
                 padding: 10px;
                 text-align: center;
-                height: 50px;
-                background: #feca57;
             }
             .left{
+                top: 20px;
                 padding: 10px;
                 height: 70vh;
-                background: #48dbfb;
             }
             .content{
-                padding: 10px;
-                background: #48dbfb;
+                padding: 30px;
+                min-height: calc(100vh - 120px);
             }
             .bottom{
                 padding: 10px;
                 text-align: center;
                 height: 100px;
-                background: #feca57;
+                background: #707c7d;
             }
         </style>
     </h:head>
@@ -38,9 +37,6 @@
 
         <div id="top">
             <ui:insert name="top">
-                <div class="col-12 top">
-                    <b>Saot</b>
-                </div>
             </ui:insert>
         </div>
         <div class="row">
@@ -48,7 +44,13 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 left">
                         <ui:insert name="left">
-                            Menu
+                            <h:form>
+                                <p:menu>
+                                    <p:menuitem value="Inicio" action="LiderCuadrillalInicio" icon="ui-icon-home"/>
+                                    
+                                    <p:menuitem value="Cerrar sesión" outcome="/inicioSesion" icon="ui-icon-cancel"/>
+                                </p:menu>
+                            </h:form>
                         </ui:insert>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 content">
@@ -59,6 +61,7 @@
                 </div>
             </div>
         </div>
+
         <div class="bottom">
             <ui:insert name="bottom">
                 <div class="col-12">
@@ -66,9 +69,8 @@
                 </div>
             </ui:insert>
         </div>
-        
-        
+
+
         <script type="text/javascript" src="../../resources/js/bootstrap.min.js"></script>
     </h:body>
-
 </html>

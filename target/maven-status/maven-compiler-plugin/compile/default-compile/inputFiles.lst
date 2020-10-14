@@ -1,10 +1,10 @@
-C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\bean\Persona2Bean.java
-C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\multimedia\ImagesView.java
 C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\controller\UsuarioController.java
 C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\ejb\UsuarioFacadeLocal.java
+C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\controller\OrdenTrabajoController.java
+C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\ejb\OrdenTrabajoFacade.java
 C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\ejb\UsuarioFacade.java
 C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\model\Usuario.java
 C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\ejb\AbstractFacade.java
-C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\multimedia\FieldsetView.java
-C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\model\Persona.java
+C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\ejb\OrdenTrabajoFacadeLocal.java
 C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\converter\RoleConverter.java
+C:\Users\MILO\Documents\NetBeansProjects\saot\src\main\java\com\saot\model\OrdenTrabajo.java

@@ -10,22 +10,11 @@
         <ui:composition template="./../../WEB-INF/templates/AgenteCentroControlTemplate.xhtml">
 
             <ui:define name="content">
-                Bienvenido Agente Centro de Control
-                <p:contentFlow value="#{imagesView.images}" var="image">
-                    <p:graphicImage name="./../../resources/images/#{image}" styleClass="content" />
-                    <div class="caption">#{image}</div>
-                </p:contentFlow>
-
-                <h:form>
-                    <p:fieldset legend="Toggleable" toggleable="true" toggleSpeed="500">
-                        <p:ajax event="toggle" listener="#{fieldsetView.handleToggle}"  />
-                        <h:panelGrid columns="2" cellpadding="5">
-                            <p:graphicImage name="./resources/images/luminaria2.jpg" />
-                            <h:outputText value="SELLS TO RED ELÉCTRICA DE PERÚ, ASSETS OF HIGH VOLTAGE POWER LINES FOR 180 MILLION EUROS"></h:outputText>
-                        </h:panelGrid>
-                    </p:fieldset>
-                </h:form>
-            </ui:define>
+                <center>
+                    <iframe width="906" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=906&amp;height=426&amp;hl=en&amp;q=%20Bogot%C3%A1+(Maps)&amp;t=p&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.acadoo.es/'>Acadoo.es</a> <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=860b8845324d6138218844df31f7119426b5a6ce'></script>
+                </center>
+                <!--<h:graphicImage name="luminaria2.jpg" library="images" styleClass="img-modules img-fluid img-thumbnail" width="20%"/>-->
+                </ui:define>
         </ui:composition>
 
 
