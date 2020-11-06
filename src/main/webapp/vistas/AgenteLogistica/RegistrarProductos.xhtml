@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./../../WEB-INF/templates/AgenteLogisticaTemplate.xhtml">
+
+            <ui:define name="content">
+                <h:form id="form">
+			<div style="padding:15px;">
+			
+				
+				<div style="padding:15px;">
+					<p:outputLabel value="Nombre: " style="font-weight:bold;"/>
+					<p:inputText value="#{CrearProductoController.producto.nombre}" style="width:100%"/>
+				</div>
+				
+				<div style="padding:15px;">
+					<p:outputLabel value="Cantidad: " style="font-weight:bold;"/>
+					<p:inputNumber style="width:100%" value="#{CrearProductoController.producto.cantidad}"/>
+				</div>
+				
+				
+				<div style="padding:30px;">
+					<p:commandButton value="Registrar Producto" action="#{CrearProductoController.create}" ajax="true" style="width:100%;"/>
+					<p:spacer width="10"/>
+					<p:button outcome="AgenteLogisticaInicio" value="Cancelar" style="width:100%;"/>
+				</div>
+				
+			</div>
+		</h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

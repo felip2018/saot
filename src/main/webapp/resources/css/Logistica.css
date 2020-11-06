@@ -1,0 +1,108 @@
+
+
+body {
+	margin: 0;
+	background-image: url(images/Descarga2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+  }
+  
+  
+  
+body:before{
+        
+	content: "";
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	background: linear-gradient(90deg,#2471A3,#707c7d)
+  }
+  
+
+  button {
+	  background:none;
+	  border: none;
+	  font-size: 100%;
+
+  }
+
+
+
+
+
+
+  .form-register {
+	width: 90%;
+	background: #ffffff;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family:'Franklin Gothic Heavy';
+	color: white;
+	box-shadow: 7px 13px 27px #c0c0c0;
+
+}
+
+.form-register h4 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
+
+.controls {  
+	width: 100%;
+	background: #ffffff;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: 'Franklin Gothic Heavy';
+	font-size: 18px;
+	color: black;
+}
+
+
+
+.form-register a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.form-register a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.form-register .botons {
+	
+	width: 100%;
+	background: #1f53c5;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+	text-align: center;
+}
+
+.form-register p {
+
+	font-size: 30px;
+	margin-bottom: 2px;
+	text-align: left;
+	font-family: 'Franklin Gothic Heavy';
+	color:#2471A3;
+
+}
+
+
+.col-sm-12 {
+	background: #ffffff;
+}

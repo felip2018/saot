@@ -7,9 +7,10 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Agente Centro de Control</title>
+        <title>Agente de logistica</title>
 
         <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="../../resources/css/Logistica.css"></link>
         <style>
             .top{
                 padding: 10px;
@@ -34,6 +35,13 @@
     </h:head>
 
     <h:body>
+        <p:layoutUnit position="north">
+                <div class="wrapper">
+                    <div class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all" style="height: 80px; margin-bottom: 2px;">
+                        <h1 align="center">Logistica</h1>
+                    </div>
+                </div>
+            </p:layoutUnit>
         <div id="top">
             <ui:insert name="top">
             </ui:insert>
@@ -43,12 +51,25 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 left">
                         <ui:insert name="left">
+                            
                             <h:form>
+                                <div class="col-12">
                                 <p:menu>
                                     <p:menuitem value="Inicio" action="AgenteLogisticaInicio" icon="ui-icon-home"/>
+                                    <p:submenu label="inventario">
+                                        <p:menuitem value="Registrar productos" outcome="RegistrarProductos" icon="ui-icon-clipboard"/>
+                                        <p:menuitem value="Lista de productos" outcome="ListaProductos" icon="ui-icon-clipboard"/>
+                                        <p:menuitem value="Eliminar Productos" outcome="EliminarProductos" icon="ui-icon-clipboard"/>
+                                        
+                                        <p:menuitem value="Orden de salida" outcome="OrdenSalida" icon="ui-icon-clipboard"/>
+                                        
+                                    </p:submenu>
+                                    
                                     <p:menuitem value="Cerrar sesión" outcome="/inicioSesion" icon="ui-icon-cancel"/>
                                 </p:menu>
+                                    </div>
                             </h:form>
+                                
                         </ui:insert>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 content">
